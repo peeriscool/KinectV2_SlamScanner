@@ -70,9 +70,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="PeerKinectDemo.xaml.cs">
-      <DependentUpon>PeerKinectDemo.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ScreenSpaceLines3D.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -89,10 +86,6 @@
     </Compile>
     <Compile Include="GraphicsCamera.cs" />
     <Compile Include="KinectFusionHelper.cs" />
-    <Page Include="PeerKinectDemo.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MathUtils.cs" />

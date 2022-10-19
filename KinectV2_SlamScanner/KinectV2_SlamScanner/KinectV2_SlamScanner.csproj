@@ -4,6 +4,20 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
+    <StartupObject>KinectV2_SlamScanner.App</StartupObject>
+    <ApplicationIcon>Kinect.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="PeerKinectDemo.xaml.cs">
+      <DependentUpon>PeerKinectDemo.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="PeerKinectDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
 
 </Project>
