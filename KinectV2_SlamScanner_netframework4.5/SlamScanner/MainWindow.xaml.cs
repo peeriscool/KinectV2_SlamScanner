@@ -1298,7 +1298,7 @@ namespace SlamScanner
                 string deviceDescription = string.Empty;
                 string deviceInstancePath = string.Empty;
 
-                FusionDepthProcessor.GetDeviceInfo(ProcessorType, DeviceToUse, out deviceDescription, out deviceInstancePath, out deviceMemoryKB);
+               FusionDepthProcessor.GetDeviceInfo(ProcessorType, DeviceToUse, out deviceDescription, out deviceInstancePath, out deviceMemoryKB);
             }
             catch (IndexOutOfRangeException)
             {

@@ -4,7 +4,6 @@
         xmlns:l="clr-namespace:SlamScanner"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SlamScanner"
         mc:Ignorable="d"
         Title="Kinect Slam Scanner" Width="844" Height="780" Loaded="WindowLoaded" Closing="WindowClosing" DataContext="{Binding RelativeSource={RelativeSource Self}}">
     <Window.Resources>
