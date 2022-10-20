@@ -28,6 +28,7 @@ namespace Microsoft.Samples.Kinect.KinectFusionExplorer
     /// </summary>
     public partial class MainWindow : Window, INotifyPropertyChanged, IDisposable
     {
+        
         /// <summary>
         /// The reconstruction volume processor type. This parameter sets whether AMP or CPU processing
         /// is used. Note that CPU processing will likely be too slow for real-time processing.

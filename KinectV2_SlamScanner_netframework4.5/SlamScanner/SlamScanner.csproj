@@ -41,6 +41,7 @@
     <StartupObject>SlamScanner.App</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Kinect, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -61,12 +62,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DepthToTextConverter.cs" />
+    <Compile Include="GraphicsCamera.cs" />
+    <Compile Include="KinectFusionHelper.cs" />
     <Compile Include="MathUtils.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <DependentUpon>Resources.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ScreenSpaceLines3D.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -93,6 +103,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -109,6 +123,51 @@
       <Project>{58851747-f078-44e1-94b0-99ef065b3319}</Project>
       <Name>Microsoft.Kinect.Fusion</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\CheckedHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\CheckedNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Kinect.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\MeshHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\MeshNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\RadioCheckedHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\RadioCheckedNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\RadioUncheckedHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\RadioUncheckedNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ResetHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ResetNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Status.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\UncheckedHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\UncheckedNormal.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
